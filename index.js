@@ -1,9 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  //Need to iterate from middle to beginning
+  for(let i = 0; i < word.length; i++){
+    const j = word.length - 1 - i;
+   
+    if(word[i] !== word[j]) return false
+  }
+  return true
 }
 
 /* 
   Add your pseudocode here
+  If the first letter is the same as last letter
+  And second letter is the same as the second last letter etc untill we get to the middle
+
+  check each letter to the corresponding letter from the end
 */
 
 /*
